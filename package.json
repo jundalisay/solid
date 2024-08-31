@@ -1,0 +1,26 @@
+{
+  "name": "example-with-auth",
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "preview": "npm run build && npx wrangler pages dev",
+    "deploy": "npm run build && wrangler pages deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240821.1",
+    "@types/node": "^20.12.7",
+    "wrangler": "^3.73.0"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.14.1",
+    "@solidjs/start": "^1.0.6",
+    "solid-js": "^1.8.18",
+    "unstorage": "1.10.2",
+    "vinxi": "^0.4.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
